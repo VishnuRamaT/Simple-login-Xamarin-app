@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+
+  <FrameLayout
+android:layout_width="match_parent"
+android:layout_height="400dp"
+android:id="@+id/frame1"
+android:background="@drawable/top"
+			>
+    <LinearLayout
+android:paddingTop="10dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:layout_margin="30dp">
+      <TextView
+      android:text="WELCOME"
+      android:id="@+id/label"
+      android:textColor="#000000"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+				/>
+
+      <EditText
+				android:layout_marginTop="40dp"
+				android:id="@+id/name"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:hint="Name"
+				android:inputType="text"
+				 />
+
+      <Button
+      android:id="@+id/btnclick"
+      android:layout_marginTop="40dp"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_gravity="top"
+      android:layout_marginStart="10dp"
+      android:background="@drawable/button"
+			/>
+    </LinearLayout>
+  </FrameLayout>
+  <FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="400dp"
+			android:id="@+id/frame2"
+			android:layout_marginLeft="30dp"
+			android:layout_below="@+id/frame1">
+    <TextView
+     
+      android:id="@+id/label2"
+      android:textColor="#000000"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+				/>
+  </FrameLayout>
+
+</RelativeLayout>
